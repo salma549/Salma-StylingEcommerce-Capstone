@@ -1,43 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
-// import axios from 'axios';
-
-// function Category({ category }) {
-//   const [products, setProducts] = useState([]);
-
-//   useEffect(() => {
-//     // Fetch products based on category
-//     axios.get(`http://localhost:5000/api/products?category=${category}`)
-//       .then(response => {
-//         // Filter products by category in case the API returns mixed data
-//         const filteredProducts = response.data.filter(product => product.category === category);
-//         setProducts(filteredProducts);
-//       })
-//       .catch(error => console.log(error));
-//   }, [category]);
-
-//   return (
-//     <div className="p-10">
-//       <h1 className="text-3xl mb-6">{category.charAt(0).toUpperCase() + category.slice(1)} Dresses</h1>
-//       <div className="grid grid-cols-3 gap-6">
-//         {products.map(product => (
-//           <Link key={product._id} to={`/product/${product._id}`}>
-//             <div className="border p-4">
-//               <img src={product.image} alt={product.name} className="w-full h-64 object-cover" />
-//               <h2 className="text-xl">{product.name}</h2>
-//               <p>{product.price} USD</p>
-//             </div>
-//           </Link>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-
-// // Men component for displaying men's clothing
-// export function Men() {
-//   return <Category category="men" />;
-// }
 
 
 
@@ -59,8 +19,8 @@ function Category({ category }) {
   }, [category]);
 
   return (
-    <div className="p-4 xs:p-6 sm:p-8 max-w-screen-xl mx-auto bg-gradient-to-br from-white to-gray-50 shadow-inner rounded-lg mt-14 font-signature">
-      <h1 className="text-3xl xs:text-4xl sm:text-5xl mb-8 xs:mb-10 sm:mb-16 text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 tracking-wider font-serif">
+    <div className="p-4 xs:p-6 sm:p-8 max-w-screen-xl mx-auto bg-gradient-to-br from-white to-gray-50 shadow-inner rounded-lg mt-24 font-signature">
+      <h1 className="text-3xl xs:text-4xl sm:text-5xl mb-8 xs:mb-10 sm:mb-16 text-center font-bold text-transparent bg-clip-text bg-[#C99780] tracking-wider font-serif">
         {category.charAt(0).toUpperCase() + category.slice(1)} Collection
       </h1>
 
@@ -86,7 +46,7 @@ function Category({ category }) {
                   {product.name}
                 </h2>
                 <p className="text-base xs:text-lg sm:text-xl font-medium text-gray-600 mb-3 xs:mb-4">₹{product.price}</p>
-                <button className="rounded-full shadow-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold text-sm xs:text-base sm:text-lg py-2 px-4 sm:px-6 hover:from-purple-700 hover:to-blue-700 transition-all transform hover:scale-105">
+                <button className="rounded-full shadow-lg bg-[#C99780] text-white font-semibold text-sm xs:text-base sm:text-lg py-2 px-4 sm:px-6 hover:bg-[#f0cab8] transition-all transform hover:scale-105">
                   View Accessories
                 </button>
               </div>

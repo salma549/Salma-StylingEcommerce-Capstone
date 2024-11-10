@@ -1,34 +1,11 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
 
-// function Header() {
-//   return (
-//     <header className="w-full py-4 bg-gray-800">
-//       <div className="container mx-auto flex justify-between items-center px-6">
-//         {/* Logo on the left */}
-//         <div className="text-white text-2xl font-bold">
-//           <Link to="/">Logo</Link>
-//         </div>
-
-//         {/* Navigation links on the right */}
-//         <div className="flex space-x-8">
-//           <Link to="/women" className="text-white text-lg hover:text-gray-400">Women</Link>
-//           <Link to="/men" className="text-white text-lg hover:text-gray-400">Men</Link>
-//           <Link to="/signup" className="text-white text-lg hover:text-gray-400">Signup</Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
-// export default Header;
 
 
 
 
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/images/logo.jpeg"
+import logo from "../assets/images/buysmartlogo.png"
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const Header = () => {
@@ -43,11 +20,9 @@ const Header = () => {
      <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
       {/* Logo Section */}
       <div className="flex items-center space-x-2">
-        <img src={logo} alt="BuySmart Logo" className="h-8 w-8 sm:h-10 sm:w-10" /> {/* Logo Image */}
+        <img src={logo} alt="BuySmart Logo" className="h-20 w-20 sm:h-20 sm:w-36" /> {/* Logo Image */}
         <div className="text-3xl font-extrabold tracking-wide">
-          <span className="bg-clip-text   text-black font-signature">
-            BuySmart
-          </span>
+         
         </div>
       </div>
 
@@ -55,36 +30,36 @@ const Header = () => {
         <nav className="hidden md:flex space-x-8 text-lg font-medium">
           <Link
             to="/"
-            className="relative text-black hover:text-[#3A98B9] transition duration-300 group"
+            className="relative text-black hover:text-[#C99780] transition duration-300 group"
           >
             Home
-            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#3A98B9] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#C99780] group-hover:w-full transition-all duration-300"></span>
           </Link>
           {/* <Link
             to="/about"
-            className="relative text-white hover:text-[#3A98B9] transition duration-300 group"
+            className="relative text-white hover:text-[C99780] transition duration-300 group"
           >
             About Us
             <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#3A98B9] group-hover:w-full transition-all duration-300"></span>
           </Link> */}
           <Link
             to="/women"
-            className="relative text-black hover:text-[#3A98B9] transition duration-300 group"
+            className="relative text-black hover:text-[#C99780] transition duration-300 group"
           >
             Women
-            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#3A98B9] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#C99780] group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             to="/men"
-            className="relative text-black hover:text-[#3A98B9] transition duration-300 group"
+            className="relative text-black hover:text-[#C99780] transition duration-300 group"
           >
             men
-            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#3A98B9] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-1 bg-[#C99780] group-hover:w-full transition-all duration-300"></span>
           </Link>
 
           <Link
             to="/signup"
-            className="relative text-black hover:text-[#144272] transition duration-300 group bg-[#72A0C1] px-4 py-2 rounded-full"
+            className="relative text-black hover:text-[#144272] transition duration-300 group bg-[#C99780] px-4 py-2 rounded-full"
           >
            Signup   </Link>
           {/* <Link
@@ -144,7 +119,7 @@ const Header = () => {
 
           <Link
             to="/signup"
-            className="relative text-white hover:text-yellow-300 transition duration-300 group bg-[#D8BFD8] px-4 py-2 rounded-full"
+            className="relative text-white hover:text-blue-500 transition duration-300 group bg-[#C99780] px-4 py-2 rounded-full "
           >
            Signup   </Link>
           {/* <Link
