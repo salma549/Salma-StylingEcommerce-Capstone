@@ -92,6 +92,8 @@ import style1 from '../assets/images/style1.jpg';
 import style3 from '../assets/images/style3.jpg';
 import style4 from '../assets/images/style4.jpg';
 import style6 from '../assets/images/style6.jpg';
+import img1 from '../assets/images/img1.jpg';
+import img2 from '../assets/images/img2.jpg';
 
 function Home() {
   return (
@@ -106,12 +108,12 @@ function Home() {
       </div>
 
       {/* Banner Images Section */}
-      <div className="w-full flex flex-wrap justify-center gap-6 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-14 hover:cursor-pointer">
+      <div className="w-full  bg-[#C99780] flex flex-wrap justify-center gap-6 p-4 sm:p-6 md:p-8 lg:p-10 xl:p-14 hover:cursor-pointer">
         {/* Women Banner */}
         <div className="relative w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[600px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out group">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 group-hover:opacity-25 transition-all duration-500" />
           <img 
-            src="https://i.pinimg.com/originals/68/c5/a1/68c5a123dc6e2130a2e16569059298d0.jpg" 
+            src={img1}
             alt="Women" 
             className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-300"
           />
@@ -128,7 +130,7 @@ function Home() {
         <div className="relative w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 h-[250px] sm:h-[350px] md:h-[400px] lg:h-[500px] xl:h-[600px] rounded-2xl overflow-hidden shadow-xl transform hover:scale-105 hover:shadow-2xl transition-all duration-500 ease-in-out group">
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-50 group-hover:opacity-25 transition-all duration-500" />
           <img 
-            src="https://i.pinimg.com/474x/47/db/69/47db69a37d01f057cc3804341349fb78.jpg" 
+            src={img2}
             alt="Men" 
             className="w-full h-full object-cover transform group-hover:scale-110 transition-all duration-300"
           />
@@ -143,7 +145,7 @@ function Home() {
       </div>
 
       {/* Additional Images Section */}
-      <div className="p-4 w-full">
+      <div className="p-4 w-full ">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
           <img src={style1} alt="Image 1" className="w-full h-auto object-cover rounded-md" />
           <img src={style3} alt="Image 2" className="w-full h-auto object-cover rounded-md" />
