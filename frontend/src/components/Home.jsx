@@ -99,7 +99,7 @@ function Home() {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Full-Width Responsive Banner Image */}
-      <div className="w-full h-[30vh] xs:h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[80vh] 2xl:h-[85vh] 3xl:h-[90vh] mb-8 relative mt-36">
+      <div className="w-full h-[30vh] xs:h-[40vh] sm:h-[50vh] md:h-[60vh] lg:h-[70vh] xl:h-[119vh] 2xl:h-[85vh] 3xl:h-[90vh] mb-8 relative mt-36">
         <img
           src={bannerimg}
           alt="Main Banner"
